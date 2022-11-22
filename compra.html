@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="compra.css">
+            <title>Barber Shop - Loja online</title>
+        </head>
+
+    <body>
+
+         <nav>
+            <img src="img/logo.gif" alt="logo" width="100px" id="logo" loading="lazy">
+
+            <a href="pagina.html" id="home">HOME</a>
+
+            <div id="insta"></div>
+            <div id="wp" href="#"></div>
+         </nav>
+
+         <main>
+
+            <div id="bloco1" >
+
+                <div id="p1"><img src="produtos/p1.png" alt="pomada" width="200px" onclick="pp1()">
+                <p>Pomada modeladora</p></div> 
+
+                <div id="p2"><img src="produtos/p2.png" alt="shampoo" width="200px" onclick="pp2()">
+                <p>Shampoo masculino</p></div>
+
+                <div id="p3"><img src="produtos/p3.png" alt="condicionador" width="200px" onclick="pp3()">
+                <p>Condicionador</p></div>
+
+            </div>
+
+            <div id="bloco2">
+
+                <div id="p4"><img src="produtos/p4.png" alt="hidratação" width="200px" onclick="pp4()">
+                <p>Hidratação capilar</p></div>
+
+                <div id="p5"><img src="produtos/p5.png" alt="creme de barbear" width="200px"onclick="pp5()">
+                <p>Creme de barbear</p></div>
+
+                <div id="p6"><img src="produtos/p6.png" alt="" width="200px" onclick="pp6()">
+                <p>Gel pós barba</p></div>
+
+            </div>
+
+            <div id="bloco3">
+                <img src="produtos/placeholder.png" alt="" id="img" width="400vw" height="300vw">
+                <h1 id="prt"></h1>
+                <div id="info"></div>
+                <button id="bt" style="display:none;"><b>Adicionar ao Carrinho</b></button><img id="car" src="car.png" alt="" width="30px" style="display:none;">
+            </div>
+
+         </main>
+
+         <footer>
+            <img src="img/logo1.png" alt="logo" width="130px">
+            <p id="fp"> Copyright 2022 – Studio Barber Shop. Todos os direitos reservados. Desenvolvido por Tec HCJ.</p>
+         </footer>
+
+         <script>
+             var p1="produtos/p1.png" 
+             var p1h="Pomada modeladora"
+             var p1p='<p>Vantagens do produto: Seco</p> <p>Tipo de Cabelo: Normal</p> <p>Marca:  Muriel</p> <p>Número de itens: 1</p> <p>Contagem de unidades: 120 Gramas</p><p id="preco">R$:15,00</p>'
+
+             var p2="produtos/p2.png"
+             var p2h="Shampoo masculino"
+             var p2p="<p>Forma do produto	Creme</p> <p>Marca:	TRUSS</p> <p>Tipo de cabelo:	Seco</p> <p>Número de itens	200</p> <p>Contagem de unidades	1 unidade</p> <p id='preco'>R$: 119,90"
+
+             var p3="produtos/p3.png"
+             var p3h="Condicionador"
+             var p3p='<h4>DESCRIÇÃO</h4> <p id="pcc">Ideal para uso diário, proporciona hidratação duradoura (sem óleos) e maciez aos fios, promove sensação de frescor e crescimento saudável. Auxilia na prevenção de acne e foliculite, além de possuir eficiente ação desodorante, ação Anti-Aging e bactericida. Indicado para todos os tipos de cabelo, barba e bigode.</p><p id="preco">R$: 94,11'
+
+             var p4="produtos/p4.png"
+             var p4h="Hidratação capilar"
+             var p4p="<p id='pcc'>Marca:	TRESemmé<p>Forma do produto	Creme</p><p>Tipo de cabelo	Normal</p><p>Vantagens do produto	Controle de danos</p><p>Contagem de unidades	1000 Grama</p><p id='preco'>R$:40,94</p>"
+
+             var p5="produtos/p5.png"
+             var p5h="Creme de barbear"
+             var p5p="<p>Um gel com Aloe Vera que alisa a pele e a prepara para um suave e preciso barbear.</p><p>Livre de óleo.</p><p id='preco'>R$: 250,00"
+
+             var p6="produtos/p6.png"
+             var p6h="Gel pós barba"
+             var p6p="<p>Marca:	Urban</p><p> Aroma:	Nirvana</p> <p>Forma do produto:	Liquido</p> <p>Contagem de unidades:	100 Grama</p> <p>Número de itens:	1</p><p id='preco'>R$:19,26"
+
+             const pd=document.getElementById("img")
+             const pf=document.getElementById("info")
+             const ph=document.getElementById("prt")
+             const btd=document.getElementById("bt")
+             const car=document.getElementById("car")
+
+             function pp1(){pd.src=p1; ph.textContent=p1h ; pf.innerHTML=p1p;btd.style="display:block;" ;car.style="display:block;"}
+
+             function pp2(){pd.src=p2 ; ph.textContent=p2h ; pf.innerHTML=p2p;btd.style="display:block;";car.style="display:block;"}
+
+             function pp3(){pd.src=p3 ; ph.textContent=p3h ; pf.innerHTML=p3p;btd.style="display:block;";car.style="display:block;"}
+
+             function pp4(){pd.src=p4 ; ph.textContent=p4h ; pf.innerHTML=p4p;btd.style="display:block;";car.style="display:block;"}
+
+             function pp5(){pd.src=p5 ; ph.textContent=p5h ; pf.innerHTML=p5p;btd.style="display:block;";car.style="display:block;"}
+
+            function pp6(){pd.src=p6;ph.textContent=p6h;pf.innerHTML=p6p;btd.style="display:block;";car.style="display:block;"}
+
+        </script>
+    </body>
+</html>
